@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WeatherForecast</string>
+    <string name="city">Пенза</string>
+     <string name="renewed">Обновлено</string>
+    <string name="renewedValue">Сегодня 13:45</string>
+    <string name="temperature">Температура</string>
+    <string name="temperatureValue">26</string>
+    <string name="descriptionWeather">Ясно</string>
+    <string name="windValue">Умеренный ветер 5.51 м/с</string>
+    <string name="pressure">Давление</string>
+    <string name="pressureValue">755.02 мм рт.ст.</string>
+    <string name="humidity">Влажность</string>
+    <string name="humidityValue">49 %</string>
+    <string name="dawn">Рассвет</string>
+    <string name="dawnValue">4:21</string>
+    <string name="sunset">Закат</string>
+    <string name="sunsetValue">19:32</string>
+    <string name="goToActivity2">Go to Activity2</string>
+    <string name="goToActivity1">Go to Activity1</string>
+</resources>

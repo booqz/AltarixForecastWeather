@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/line_1"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/line_1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/city" />
+
+
+    <TextView
+        android:id="@+id/renewed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/city"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/renewed" />
+
+    <TextView
+        android:id="@+id/renewedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/city"
+        app:layout_constraintLeft_toLeftOf="@id/line_1"
+        android:text="@string/renewedValue" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/renewed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/temperature" />
+
+    <TextView
+        android:id="@+id/temperatureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/renewedValue"
+        app:layout_constraintLeft_toLeftOf="@id/line_1"
+         android:text="@string/temperatureValue" />
+
+    <TextView
+        android:id="@+id/descriptionWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/temperatureValue"
+        app:layout_constraintLeft_toLeftOf="@id/line_1"
+        android:text="@string/descriptionWeather" />
+
+    <TextView
+        android:id="@+id/windValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/descriptionWeather"
+        app:layout_constraintLeft_toLeftOf="@id/line_1"
+        android:text="@string/windValue" />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/windValue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/pressure" />
+
+    <TextView
+        android:id="@+id/pressureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/windValue"
+        app:layout_constraintLeft_toLeftOf="@id/line_1"
+        android:text="@string/pressureValue" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/pressure"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/humidity" />
+
+    <TextView
+        android:id="@+id/humidityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/pressureValue"
+        app:layout_constraintLeft_toLeftOf="@id/line_1"
+        android:text="@string/humidityValue" />
+
+    <TextView
+        android:id="@+id/dawn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/humidity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/dawn" />
+
+    <TextView
+        android:id="@+id/dawnValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/humidityValue"
+        app:layout_constraintLeft_toLeftOf="@id/line_1"
+        android:text="@string/dawnValue" />
+
+    <TextView
+        android:id="@+id/sunset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/dawn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/sunset" />
+
+    <TextView
+        android:id="@+id/sunsetValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/dawnValue"
+        app:layout_constraintLeft_toLeftOf="@id/line_1"
+        android:text="@string/sunsetValue" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Text for Activity2"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/sunset"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:inputType="textPersonName"
+        />
+    <Button
+        android:id="@+id/goToActivity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goToActivity2"
+        android:onClick="goToActivity2"
+        app:layout_constraintTop_toBottomOf="@id/editText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/textFromActivity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/goToActivity2"
+        app:layout_constraintLeft_toLeftOf="parent"
+         />
+
+</android.support.constraint.ConstraintLayout>
